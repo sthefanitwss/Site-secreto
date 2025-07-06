@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nosso Amor Secreto</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #ffe6eb, #fff);
+      color: #333;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .password-container, .content {
+      max-width: 600px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    }
+    input[type="password"] {
+      padding: 10px;
+      width: 80%;
+      font-size: 16px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      margin-top: 20px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 25px;
+      font-size: 16px;
+      background-color: #ff6b81;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .hidden {
+      display: none;
+    }
+    .slide {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #fff0f3;
+      border-radius: 15px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="password-container" id="login">
+    <h2>🌹 Nosso Cantinho Secreto 🌹</h2>
+    <p>Digite a senha para acessar nossa história 💕</p>
+    <input type="password" id="password" placeholder="Senha" />
+    <br />
+    <button onclick="checkPassword()">Entrar</button>
+  </div>
+
+  <div class="content hidden" id="siteContent">
+    <h1>✨ Sthefani & Eduardo ✨</h1>
+
+    <div class="slide">
+      <p>Meu amor, obrigada por tudo que fez e faz por mim. Cada momento com você é único e eu amo todos eles, apesar dos meus dramas. Só de estar ao seu lado, tudo já vale a pena. Eu te amo! 💖</p>
+    </div>
+
+    <div class="slide">
+      <p>Desde o nosso primeiro beijo até hoje, é como se tudo estivesse no lugar certo. Parece que o universo sorriu pra gente naquele 24/06 e nunca mais parou. 😍</p>
+    </div>
+
+    <div class="slide">
+      <p>A gente se entende só no olhar, pensa as mesmas coisas, combina até nos gostos (inclusive no Homem-Aranha 🕷️). Somos literalmente alma gêmea em versão debochada e apaixonada. 😌</p>
+    </div>
+
+    <div class="slide">
+      <p>Te amo por tudo que você é, por tudo que a gente é juntos, e por tudo que ainda vamos ser. Que esse amor cresça cada dia mais. ❤️</p>
+    </div>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const senha = document.getElementById('password').value;
+      if (senha === "2406") {
+        document.getElementById('login').classList.add('hidden');
+        document.getElementById('siteContent').classList.remove('hidden');
+      } else {
+        alert("Senha incorreta! Tenta de novo, meu amorzinho 💘");
+      }
+    }
+  </script>
+
+</body>
+</html>
